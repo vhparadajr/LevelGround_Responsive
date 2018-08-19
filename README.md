@@ -1,6 +1,6 @@
 # LevelGround_Responsive
 
-Practice site for responsive design
+Responsive website design
 
 ![alt tag](https://i.imgur.com/ZV84hOQ.png)
 
