@@ -1,0 +1,449 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 10px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+header{
+  height: 60px;
+  background: rgb(91, 107, 127);
+}
+
+nav li{
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 1em;
+}
+
+.hamburger{
+  display: none;
+}
+
+header img{
+  display: block;
+  background: rgb(91, 107, 127);
+  width: 6em;
+  height: 6em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -44px;
+}
+
+header a{
+  display: inline-block;
+  float: right;
+  text-decoration: none;
+  color: rgb(91, 107, 127);
+  margin-top: -47px;
+  margin-right: 7em;
+  background: white;
+  padding: 1em;
+  border-radius: .5em;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+main{
+  background: rgb(91, 107, 127);
+  display:inline-block;
+  float: left;
+  width: 100%;
+  height: 43em;
+}
+
+main h1{
+  margin-top: 89px;
+  font-size: 5em;
+  text-align: center;
+  color: white;
+  font-weight: initial;
+}
+
+main p{
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  font-size: 2em;
+  font-weight: lighter;
+  padding-left: 9em;
+  padding-right: 9em;
+}
+
+.watchVideo{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  display: block;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.fab fa-youtube{
+  font-size: 2em;
+}
+
+.mainWhy{
+  display: inline-block;
+  width: 100%;
+  height: 35em;
+  float: left;
+}
+
+.mainWhy h2{
+  margin-top: 82px;
+  margin-bottom: 4px;
+  font-size: 5em;
+  text-align: center;
+  color: black;
+  font-weight: initial;
+}
+
+.mainWhy p{
+  text-align: center;
+  margin: 0 auto;
+  color: black;
+  font-size: 1.7em;
+  padding-left: 16em;
+  padding-right: 16em;
+}
+
+.demo{
+  display: inline-block;
+  width: 100%;
+  background: rgba(91, 107, 127, 0.3);
+  float: left;
+}
+
+.demoFrames{
+  display: inline-block;
+  width: 50%;
+  height: 40em;
+  float: left;
+  padding-top: 2em;
+  text-align: center;
+}
+
+.demoFrames span{
+  margin-top: 1.5em;
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+.demoFrames p{
+  padding-left: 12.5em;
+  padding-right: 12.5em;
+}
+
+.demoFrames a{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  margin-top: 1em;
+  height: 25px;
+  width: 104px;
+  padding-top: 4px;
+      border: 1px solid black;
+}
+
+.demoBoxes{
+  display: block;
+  width: 300px;
+  height: 17em;
+  background: rgb(91, 107, 127);
+  margin: 0 auto;
+}
+
+
+.volunteer{
+  display: inline-block;
+  width: 100%;
+  height: 35em;
+  float: left;
+}
+
+.volunteer h2{
+  margin-top: 82px;
+  margin-bottom: 4px;
+  font-size: 5em;
+  text-align: center;
+  color: black;
+  font-weight: initial;
+}
+
+.volunteer p{
+  text-align: center;
+  margin: 0 auto;
+  color: black;
+  font-size: 1.7em;
+  padding-left: 8em;
+  padding-right: 8em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.volunteer a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  height: 25px;
+  width: 104px;
+  padding-top: 4px;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+footer{
+  height: 22em;
+  background: rgb(21, 31, 43);
+  padding: 17px;
+  float: left;
+  width: 100%
+}
+
+.footerLeft{
+  color: rgba(255, 255, 255, 0.7);
+  width: 113px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.footerLeft a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  font-size: 21px;
+  margin: 6px;
+  float: left;
+}
+
+.footerLeft span{
+  display: inline-block;
+  float: left;
+  clear: left;
+  font-size: 10px;
+}
+
+.footerLeft ul{
+  display: inline-block;
+  float: left;
+  margin-left: -96px;
+}
+
+.footerLeft li{
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 1em;
+  float: left;
+  color: white;
+}
+
+.paddingFooterLi{
+  padding-left: 21px;
+}
+
+.footerRight{
+  display: inline-block;
+  float: right;
+  color: white;
+  height: 153px;
+  padding-right: 12px;
+  padding-top: 10px;
+}
+
+.footerRight p{
+  width: 9em;
+}
+
+.footerRight span{
+  display: inline-block;
+  width: 108px;
+}
+
+.footerRight a{
+  text-decoration: none;
+  color: white;
+}
+
+footer h5{
+  border-top: 1px solid white;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1em;
+  padding-top: .5em;
+}
+
+body{
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  main{
+    height: 50em;
+  }
+  .mainWhy h2{
+    margin-top: 61px;
+  }
+  .mainWhy p{
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+  .demoFrames p{
+    padding-left: 6.5em;
+    padding-right: 6.5em;
+  }
+  .volunteer h2{
+    margin-top: 60px;
+  }
+  .volunteer p{
+    margin-top: 1em;
+  }
+  body{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main{
+    height: 40em;
+  }
+  main h1{
+    font-size: 4em;
+    margin-top: 60px;
+  }
+  main p{
+    font-size: 1.5em;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .mainWhy h2{
+    margin-top: 61px;
+  }
+  .mainWhy p{
+    padding-left: 4em;
+    padding-right: 4em;
+    font-size: 1.5em;
+  }
+  .demoFrames{
+    height: 41em;
+  }
+  .demoFrames p{
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+  .demoBoxes{
+    width: 100%;
+  }
+  .volunteer h2{
+    font-size: 3em;
+    margin-top: 86px;
+  }
+  .volunteer p{
+    margin-top: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  body{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hamburger{
+    display: block;
+    color: white;
+    float: right;
+    font-size: 2em;
+    margin-top: 4px;
+    margin-bottom: 0;
+  }
+  nav li{
+    display: none;
+  }
+  header img{
+    margin-left: 10px;
+    margin-top: -11px;
+  }
+  .donateButton{
+    display: none;
+  }
+  main{
+    height: 40em;
+  }
+  main h1{
+    font-size: 3em;
+    margin-top: 44px;
+  }
+  main p{
+    font-size: 1.5em;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .mainWhy h2{
+    margin-top: 61px;
+  }
+  .mainWhy p{
+    padding-left: 4em;
+    padding-right: 4em;
+    font-size: 1.5em;
+  }
+  .demoFrames{
+    width: 100%;
+  }
+  .demoFrames p{
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+  .demoBoxes{
+    width: 100%;
+  }
+  .volunteer h2{
+    font-size: 2em;
+    margin-top: 86px;
+  }
+  .volunteer p{
+    margin-top: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
+    font-size: 1.5em;
+  }
+  footer{
+    height: 24em;
+  }
+  body{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
